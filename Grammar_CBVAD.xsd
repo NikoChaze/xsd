@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with EasyGrammar, Version=3.0.1.0, Culture=neutral, PublicKeyToken=null-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GTO_AppSettings">
+    <xs:complexType>
+      <xs:all>
+        <xs:element minOccurs="0" maxOccurs="1" default="VAD" name="LABEL_CONTRAT">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_LABEL_CONTRAT">
+                <xs:attribute fixed="Label Application" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Referencement" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="0000000" name="CONTRACT_NUMBER">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_CONTRACT_NUMBER">
+                <xs:attribute fixed="Num de Contrat Client" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Referencement" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="00000" name="BANK_CODE">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_BANK_CODE">
+                <xs:attribute fixed="Code Banque" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Referencement" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="000" name="LOGICAL_NBR">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_LOGICAL_NBR">
+                <xs:attribute fixed="Num Logique du Terminal" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Referencement" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="1iere Init" name="MO_CALL_REASON">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_MO_CALL_REASON">
+                <xs:attribute fixed="Raison d'Appel" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels/Options Marchands" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="FAUX" name="MO_PRINT_UNSUC_TICK">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_MO_PRINT_UNSUC_TICK">
+                <xs:attribute fixed="Impression des Tickets de Transaction echouee ?" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels/Options Marchands" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="FAUX" name="MO_V32BIS">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_MO_V32BIS">
+                <xs:attribute fixed="Utilise num de telephone V32bis par defaut (08 36 06 44 44) ?" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels/Options Marchands" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="FAUX" name="MO_V22BIS">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_MO_V22BIS">
+                <xs:attribute fixed="Forcer vitesse modem a 2400bps ?" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels/Options Marchands" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="CARTE" name="MO_FORCAGE">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_MO_FORCAGE">
+                <xs:attribute fixed="Forcage transaction ?" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels/Options Marchands" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="VRAI" name="MO_DOUBLON">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_MO_DOUBLON">
+                <xs:attribute fixed="Detection des Doublons de Transaction ?" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels/Options Marchands" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="VRAI" name="BULLETIN_8">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_BULLETIN_8">
+                <xs:attribute fixed="MPE 5.5" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="true" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="AUCUNE" name="GATEWAY">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_GATEWAY">
+                <xs:attribute fixed="Passerelle" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="FAUX" name="FOLLOW_UP_CALL">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_FOLLOW_UP_CALL">
+                <xs:attribute fixed="Appel parametrage a suivre" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="IP" name="CONNECT_TYPE_MAIN">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_CONNECT_TYPE_MAIN">
+                <xs:attribute fixed="Type de Connection Teleparametrage 1" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="" name="PAD_MAIN">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_PAD_MAIN">
+                <xs:attribute fixed="PAD Teleparametrage 1" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="1.1.1.1:9999" name="CENTER_NBR_MAIN">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_CENTER_NBR_MAIN">
+                <xs:attribute fixed="Adresse Centre Teleparametrage 1 (Adresse X25 ou IP:Port ou URL:Port)" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="EBAM" name="CONNECT_TYPE_BACKUP">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_CONNECT_TYPE_BACKUP">
+                <xs:attribute fixed="Type de Connection Teleparametrage 2" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="0836064444" name="PAD_BACKUP">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_PAD_BACKUP">
+                <xs:attribute fixed="PAD Teleparametrage 2" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="1" maxOccurs="1" default="111222333" name="CENTER_NBR_BACKUP">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_CENTER_NBR_BACKUP">
+                <xs:attribute fixed="Adresse Centre Teleparametrage 2 (Adresse X25 ou IP:Port ou URL:Port)" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="SIMPLE" name="SSL_AUTH_TYPE">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_SSL_AUTH_TYPE">
+                <xs:attribute fixed="Type d'Autorisation SSL" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="STCA" name="SSL_SERVEUR_PROFILE">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_SSL_SERVEUR_PROFILE">
+                <xs:attribute fixed="Profil SSL serveur" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" default="" name="SSL_CLIENT_PROFILE">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="T_SSL_CLIENT_PROFILE">
+                <xs:attribute fixed="Profil SSL Client" name="Label" type="xs:string" use="optional" />
+                <xs:attribute fixed="true" name="Visible" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="false" name="ReadOnly" type="xs:boolean" use="optional" />
+                <xs:attribute fixed="Parametres Fonctionnels" name="Groupe" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+      <xs:attribute default="02.02.00" name="Version" type="xs:string" use="optional" />
+      <xs:attribute fixed="01" name="GrammarVersion" type="xs:string" use="required" />
+      <xs:attribute fixed="CBVAD" name="Name" type="xs:string" use="required" />
+      <xs:attribute fixed="TeleInit" name="Type" type="xs:string" use="required" />
+      <xs:attribute fixed="false" name="Forcing" type="xs:boolean" use="optional" />
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="T_LABEL_CONTRAT">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20" />
+      <xs:pattern value=".{1,20}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_CONTRACT_NUMBER">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="7" />
+      <xs:pattern value="[0-9]{7}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_BANK_CODE">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="5" />
+      <xs:pattern value="[0-9]{5}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_LOGICAL_NBR">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="3" />
+      <xs:pattern value="[0-9]{0,3}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_MO_CALL_REASON">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1iere Init" />
+      <xs:enumeration value="Maintenance" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_MO_PRINT_UNSUC_TICK">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VRAI" />
+      <xs:enumeration value="FAUX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_MO_V32BIS">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VRAI" />
+      <xs:enumeration value="FAUX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_MO_V22BIS">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VRAI" />
+      <xs:enumeration value="FAUX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_MO_FORCAGE">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CARTE" />
+      <xs:enumeration value="TOUCHE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_MO_DOUBLON">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VRAI" />
+      <xs:enumeration value="FAUX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_BULLETIN_8">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VRAI" />
+      <xs:enumeration value="FAUX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_GATEWAY">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AUCUNE" />
+      <xs:enumeration value="RTC" />
+      <xs:enumeration value="IP" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_FOLLOW_UP_CALL">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VRAI" />
+      <xs:enumeration value="FAUX" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_CONNECT_TYPE_MAIN">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EMA" />
+      <xs:enumeration value="EBAM" />
+      <xs:enumeration value="IP" />
+      <xs:enumeration value="URL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_PAD_MAIN">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20" />
+      <xs:pattern value="[0-9]{0,20}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_CENTER_NBR_MAIN">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="40" />
+      <xs:pattern value=".*" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_CONNECT_TYPE_BACKUP">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EMA" />
+      <xs:enumeration value="EBAM" />
+      <xs:enumeration value="IP" />
+      <xs:enumeration value="URL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_PAD_BACKUP">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20" />
+      <xs:pattern value="[0-9]{0,20}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_CENTER_NBR_BACKUP">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="40" />
+      <xs:pattern value=".*" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_SSL_AUTH_TYPE">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AUCUNE" />
+      <xs:enumeration value="SIMPLE" />
+      <xs:enumeration value="DOUBLE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_SSL_SERVEUR_PROFILE">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="100" />
+      <xs:pattern value=".*" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="T_SSL_CLIENT_PROFILE">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="100" />
+      <xs:pattern value=".*" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
